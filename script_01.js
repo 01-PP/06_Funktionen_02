@@ -9,13 +9,13 @@
 */
 
 // application / App
-// startApp();
+startApp();
 function startApp() {
     output(calculator(getNumber("1"),getOp(),getNumber("2")));
 }
 
 // module: data input | test:
-output(getNumber("1"));
+// output(getNumber("1"));
 function getNumber(numTxt) {
     
     const displayStr = "Bitte Zahl " + numTxt + " eingeben:";
@@ -30,7 +30,6 @@ function getNumber(numTxt) {
 
     return num;
 }
-
 
 // module: input operator | Test:
 // output(getOp());
