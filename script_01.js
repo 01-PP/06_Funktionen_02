@@ -34,14 +34,15 @@ function getOp() {
 
 // module: check operator | Test:
 // agreement : "+","-","*",":"
-output(isOpValid("+"));
-output(isOpValid("-"));
-output(isOpValid("*"));
-output(isOpValid(":"));
-output(isOpValid("#?#"));
-output(isOpValid(""));
+// output(isOpValid("+"));
+// output(isOpValid("-"));
+// output(isOpValid("*"));
+// output(isOpValid(":"));
+// output(isOpValid("#?#"));
+// output(isOpValid(""));
 function isOpValid(op) {
 
+    //1st variant
     switch (op) {
         case "+":
         case "-":
@@ -52,8 +53,10 @@ function isOpValid(op) {
             return false;
     }
 
-}
+    // 2nd variant
+    // return op == "+" || op == "-" || op == "*" || op == ":";
 
+}
 
 // module: calculator | tests:
 // agreement : "+","-","*",":"
